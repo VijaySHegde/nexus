@@ -1,11 +1,12 @@
 @Library('shlib')_
 pipeline{
-  agent any
+    agent any
     stages{
-        stage('Nexus'){
-           steps{
-              nexusconector()
-         } 
-        } 
+        stage("jfrog"){
+            steps{
+       nexusconector()
+        }
+        }
+        
     }
 }
