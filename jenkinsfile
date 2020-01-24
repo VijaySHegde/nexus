@@ -1,4 +1,5 @@
 @Library('shlib')_
+@Library('shlib1')__
 pipeline{
     agent any
     stages{
@@ -12,6 +13,13 @@ pipeline{
        nexuscollector()
         }
         }
+        stage("Confluence")
+        {
+        steps{
+        confluence_collector()
+        }
+        }
+        
         
     }
 }
