@@ -61,18 +61,8 @@ pipeline{
         }
         }
         
-        stage("jira_Connector")
-        {
-        steps{
-        jira_create_project()
-        }
-        }
-        stage("Jira_Collector")
-        {
-        steps{
-        jira_collect_issues()
-        }
-        }
+        
+    
         
         stage("bamboo_connector")
         {
@@ -112,10 +102,24 @@ pipeline{
        nexuscollector()
         }
         }
-        stage("Confluence")
+        stage("Confluence_collector")
         {
         steps{
         confluence_collector()
+        }
+        }
+        
+         stage("Confluence_connector")
+        {
+        steps{
+        confluence_connector()
+        }
+        }
+        
+         stage("Confluence_connector_delete")
+        {
+        steps{
+        confluence_delete()
         }
         }
         
