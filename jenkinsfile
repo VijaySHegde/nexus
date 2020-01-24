@@ -8,7 +8,101 @@
 pipeline{
     agent any
     stages{
-        stage("NexusConnector"){
+     stage("github_connector")
+        {
+        steps{
+        gitrepo()
+        }
+        }
+        
+         stage("github_Collector")
+        {
+        steps{
+        gitrepolist()
+        }
+        }
+        
+         stage("gitlab_Connector")
+        {
+        steps{
+      gitlabrepo()
+        }
+        }
+         stage("gitlab_Collector")
+        {
+        steps{
+        gitlabrepolist()
+        }
+        }
+        
+         stage("bitbucket_connector")
+        {
+        steps{
+        bitbucket()
+        }
+        }
+         stage("bitbucket_collector")
+        {
+        steps{
+        bitbucketlist()
+        }
+        }
+        
+         stage("Jenkins_connector")
+        {
+        steps{
+        jenkins-connector()
+        }
+        }
+         stage("Jenkins_Collector")
+        {
+        steps{
+        jenkins-collector()
+        }
+        }
+        
+        stage("jira_Connector")
+        {
+        steps{
+        jira_create_project()
+        }
+        }
+        stage("Jira_Collector")
+        {
+        steps{
+        jira_collect_issues()
+        }
+        }
+        
+        stage("bamboo_connector")
+        {
+        steps{
+        bambooconector()
+        }
+        }
+        stage("bamboo_Collector")
+        {
+        steps{
+        bamboocollector()
+        }
+        }
+        
+        stage("sonar_Connector")
+        {
+        steps{
+        sonarConnector()
+        }
+        }
+        
+    stage("sonar_Collector")
+        {
+        steps{
+        sonarCollector()
+        }
+        }
+    
+    
+      stage("NexusConnector"){
             steps{
        nexusconector()
         }
@@ -25,12 +119,21 @@ pipeline{
         }
         }
         
-        stage("mani")
+        stage("AzureCollector")
         {
         steps{
         azurecol()
         }
         }
+        
+         stage("AzureConnector")
+        {
+        steps{
+        azureconn()
+        }
+        }
+        
+        
         
         
     }
