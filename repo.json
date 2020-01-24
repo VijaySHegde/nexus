@@ -1,8 +1,8 @@
 {
     "data": {
         "repoType": "hosted",
-        "id": "somerep02",
-        "name": "Sample2",
+        "id": "somerep03",
+        "name": "Sample3",
         "repoPolicy": "RELEASE",
         "provider": "maven2",
         "providerRole": "org.sonatype.nexus.proxy.repository.Repository",
