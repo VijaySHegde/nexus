@@ -51,13 +51,13 @@ pipeline{
          stage("Jenkins_connector")
         {
         steps{
-        jenkins-connector()
+        jenkinsconnector()
         }
         }
          stage("Jenkins_Collector")
         {
         steps{
-        jenkins-collector()
+        jenkinscollector()
         }
         }
         
