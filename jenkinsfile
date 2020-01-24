@@ -2,7 +2,7 @@
 pipeline{
     agent any
     stages{
-        stage("Nexus"){
+        stage("NexusConnector"){
             steps{
        nexusconector()
         }
