@@ -2,7 +2,7 @@
 pipeline{
     agent any
     stages{
-        stage("jfrog"){
+        stage("Nexus"){
             steps{
        nexusconector()
         }
