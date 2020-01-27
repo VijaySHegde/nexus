@@ -46,7 +46,7 @@ pipeline{
         }
         }
         
-         stage("Jenkins_connector")
+       /*  stage("Jenkins_connector")
         {
         steps{
         jenkinsconnector()
@@ -58,7 +58,7 @@ pipeline{
         jenkinscollector()
         }
         }
-        
+        */
         
     
         
