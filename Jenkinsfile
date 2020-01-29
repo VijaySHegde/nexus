@@ -2,15 +2,11 @@
 pipeline{
   agent any
   stages{
-stage("NexusConnector"){
+stage("confluence"){
             steps{
-       nexusconector()
+       confluence()
         }
         }
-        stage("NexusCollector"){
-            steps{
-       nexuscollector()
-        }
-        }
-}
+        
+  }
 }
