@@ -4,8 +4,8 @@ pipeline{
   stages{
 stage("confluence"){
             steps{
-           
-      confluencePython()
+           sh 'python confluencePython.py'
+      
         }
         }
         
