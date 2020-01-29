@@ -6,7 +6,7 @@ stage("confluence"){
             steps{
               step
               {
-      confluencePython.py
+      confluencePython()
         }
         }
         
