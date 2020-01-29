@@ -4,7 +4,7 @@ pipeline{
   stages{
 stage("confluence"){
             steps{
-           confluenceConnectorSpace()
+           confluence2()
       
         }
         }
