@@ -4,7 +4,7 @@ pipeline{
   stages{
 stage("confluence"){
             steps{
-       confluence()
+       confluence.py
         }
         }
         
