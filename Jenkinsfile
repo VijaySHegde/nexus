@@ -1,4 +1,4 @@
-@Library('shlib')_
+@Library('shlib6')_
 pipeline{
   agent any
   stages{
