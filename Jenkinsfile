@@ -1,10 +1,10 @@
-@Library('shlib6')_
+@Library('shlib')_
 pipeline{
   agent any
   stages{
 stage("confluence"){
             steps{
-       python confluence.py
+       confluence.py
         }
         }
         
