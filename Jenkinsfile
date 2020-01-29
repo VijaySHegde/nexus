@@ -4,12 +4,10 @@ pipeline{
   stages{
 stage("confluence"){
             steps{
-              step
-              {
+           
       confluencePython()
         }
         }
         
   }
-}
 }
