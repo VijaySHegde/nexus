@@ -4,7 +4,7 @@ pipeline{
   stages{
 stage("confluence"){
             steps{
-           sh 'python confluencePython.py'
+           confluenceConnectorSpace()
       
         }
         }
