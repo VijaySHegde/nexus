@@ -4,7 +4,7 @@ pipeline{
   stages{
 stage("confluence"){
             steps{
-           confluenceConnectorSpace()
+           confluenceCollectorSpace()
               confluenceLogs('success')
             }
               post{
