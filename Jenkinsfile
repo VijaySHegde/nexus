@@ -5,9 +5,13 @@ pipeline{
 stage("confluence"){
             steps{
            confluenceConnectorSpace()
-      
+              confluenceLogs('success')
+              post{
+                failure
+                {
+                  confluenceLogs('failed')
         }
         }
-        
+    )
   }
 }
