@@ -2,20 +2,36 @@
 pipeline{
   agent any
   stages{
-stage("confluence"){
+stage("confluenceConnector"){
             steps{
-           confluenceCollectorSpace()
-              confluenceLogs('success')
+           confluenceConnectorSpace()
+              confluenceLogs('space created')
             }
               post{
                 failure
                 {
-                  confluenceLogs('failed')
+                  confluenceLogs('failed to create space')
         }
         }
             }
+stage("confluenceCollector")
+    {
+      steps{
+        confluenceCollectorSpace()
+          confluenceLogs('collected space info')
+      }
+      post{
+        failure
+        {
+          confluenceLogs('coudnt collect info')
+        }
   }
     
     
   }
+  }
+
+
+}
+}
 
