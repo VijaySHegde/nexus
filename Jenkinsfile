@@ -6,6 +6,7 @@ stage("confluence"){
             steps{
            confluenceConnectorSpace()
               confluenceLogs('success')
+            }
               post{
                 failure
                 {
@@ -17,4 +18,4 @@ stage("confluence"){
     
     
   }
-}
+
