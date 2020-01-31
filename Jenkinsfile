@@ -18,12 +18,12 @@ stage("confluenceCollector")
     {
       steps{
         confluenceCollectorSpace()
-          confluenceLogs1('collected space info')
+          confluenceLogs2('collected space info')
       }
       post{
         failure
         {
-          confluenceLogs1('coudnt collect info')
+          confluenceLogs2('coudnt collect info')
         }
   }
     
