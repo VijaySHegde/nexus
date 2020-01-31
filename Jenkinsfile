@@ -12,6 +12,9 @@ stage("confluence"){
                   confluenceLogs('failed')
         }
         }
-    )
+            }
+  }
+    
+    
   }
 }
