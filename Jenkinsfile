@@ -2,7 +2,7 @@
 pipeline{
   agent any
   stages{
-stage("confluenceConnector"){
+/*stage("confluenceConnector"){
             steps{
            confluenceConnectorSpace()
               confluenceLogs('space created')
@@ -29,6 +29,13 @@ stage("confluenceCollector")
     
     
   }
+  */
+    stage("confluenceContent")
+    {
+      steps{
+        confluenceContent()
+      }
+    }
   }
 
 
