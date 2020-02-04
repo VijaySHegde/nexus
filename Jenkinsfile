@@ -30,10 +30,16 @@ stage("confluenceCollector")
     
   }
   */
-    stage("confluenceContent")
+   /* stage("confluenceContent")
     {
       steps{
         confluenceContent()
+      }
+    } */
+    stage("confluenceDelte")
+    {
+      steps{
+        confluenceDeleteSpace()
       }
     }
   }
