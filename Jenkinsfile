@@ -36,10 +36,17 @@ stage("confluenceCollector")
         confluenceContent()
       }
     } */
-    stage("confluenceDelte")
+  /*  stage("confluenceDelte")
     {
       steps{
         confluenceDeleteSpace()
+      }
+    } */
+    
+    stage("space crreation")
+    {
+      steps{
+        confluenceConnectorSpaceJ()
       }
     }
   }
