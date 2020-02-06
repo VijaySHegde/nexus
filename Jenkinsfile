@@ -1,4 +1,4 @@
-Map modules = [:]
+//Map modules = [:]
 @Library('shlib')_
 pipeline{
   agent any
@@ -101,20 +101,14 @@ stage("confluenceCollector")
       }
   }
   */
-    stage("groupmember")
+    stage("testing")
     {
-      steps{
-        script
-        {
-         modules.confluenceTest = load "confluenceTest.groovy"
-          modules.confluenceTest.call(jsondata)
-        // modules.first.test2()
-          modules.confluenceTest.info(jsondata)
-
- 
+      steps
+      {
+        confluenceTestFile(jsondata)
       }
-  }
     }
+    
   /*  stage("getgroup")
     {
       steps{
