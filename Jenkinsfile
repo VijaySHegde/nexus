@@ -67,10 +67,16 @@ stage("confluenceCollector")
         confluenceCollectorSpaceJ(jsondata)
       }
     } */
-    stage("collectorspace")
+  /*  stage("collectorspace")
     {
       steps{
         confluenceGetGroupJ(jsondata)
+      }
+    } */
+    stage("get group")
+    {
+      steps{
+        confluenceGroupJ(jsondata)
       }
     } 
   }
