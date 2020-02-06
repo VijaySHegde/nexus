@@ -91,7 +91,7 @@ stage("confluenceCollector")
         confluenceCollectorSpaceJ(jsondata)
       }
   }
-
+  }
 
 }
 
