@@ -110,6 +110,15 @@ stage("confluenceCollector")
     }
     }
     
+     stage("grouping")
+    {
+      steps
+      { script{
+        confluenceTest.info(jsondata)
+      }
+    }
+    }
+    
   /*  stage("getgroup")
     {
       steps{
