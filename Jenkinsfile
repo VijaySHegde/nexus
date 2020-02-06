@@ -49,10 +49,16 @@ stage("confluenceCollector")
         confluenceConnectorSpaceJ(jsondata)
       }
     } */
-    stage("content creation")
+   /* stage("content creation")
     {
       steps{
         confluenceContentJ(jsondata)
+      }
+    } */
+    stage("private space creation")
+    {
+      steps{
+        confluencePrivateSpaceJ(jsondata)
       }
     } 
   }
