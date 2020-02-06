@@ -93,12 +93,27 @@ stage("confluenceCollector")
   }*/
     
     
-    stage("delete page")
+ /*   stage("delete page")
     {
       steps{
         confluenceDeleteContentJ(jsondata)
       }
   }
+  */
+    stage("getgroup")
+    {
+      steps{
+        log.call(jsondata)
+      }
+  }
+    stage("groupmember")
+    {
+      steps{
+        log.info(jsondata)
+      }
+  }
+    
+    
   }
 
 }
