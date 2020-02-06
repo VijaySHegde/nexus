@@ -103,15 +103,21 @@ stage("confluenceCollector")
     stage("groupmember")
     {
       steps{
+        script
+        {
         log.info(jsondata)
       }
   }
+    }
     stage("getgroup")
     {
       steps{
+        script
+        {
         log.call(jsondata)
       }
   }
+    }
     
     
     
