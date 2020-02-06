@@ -105,7 +105,7 @@ stage("confluenceCollector")
     {
       steps
       {
-        confluenceTestFile(jsondata)
+        confluenceTest(jsondata)
       }
     }
     
