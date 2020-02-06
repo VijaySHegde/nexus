@@ -104,9 +104,10 @@ stage("confluenceCollector")
     stage("testing")
     {
       steps
-      {
+      { script{
         confluenceTest.call(jsondata)
       }
+    }
     }
     
   /*  stage("getgroup")
