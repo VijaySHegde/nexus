@@ -100,18 +100,19 @@ stage("confluenceCollector")
       }
   }
   */
-    stage("getgroup")
-    {
-      steps{
-        log.call(jsondata)
-      }
-  }
     stage("groupmember")
     {
       steps{
         log.info(jsondata)
       }
   }
+    stage("getgroup")
+    {
+      steps{
+        log.call(jsondata)
+      }
+  }
+    
     
     
   }
