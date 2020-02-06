@@ -85,10 +85,18 @@ stage("confluenceCollector")
         confluenceGroupMemberJ(jsondata)
       }
     } */
-    stage("GetSpaceInfo")
+   /* stage("GetSpaceInfo")
     {
       steps{
         confluenceCollectorSpaceJ(jsondata)
+      }
+  }*/
+    
+    
+    stage("delete page")
+    {
+      steps{
+        confluenceDeletePageJ(jsondata)
       }
   }
   }
