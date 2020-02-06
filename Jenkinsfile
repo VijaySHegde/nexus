@@ -109,6 +109,8 @@ stage("confluenceCollector")
          modules.confluenceTest = load "confluenceTest.groovy"
           modules.confluenceTest.call(jsondata)
         // modules.first.test2()
+          modules.confluenceTest.info(jsondata)
+
  
       }
   }
