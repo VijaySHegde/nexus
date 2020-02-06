@@ -96,7 +96,7 @@ stage("confluenceCollector")
     stage("delete page")
     {
       steps{
-        confluenceDeletePageJ(jsondata)
+        confluenceDeleteContentJ(jsondata)
       }
   }
   }
