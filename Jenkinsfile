@@ -77,7 +77,7 @@ stage("confluenceCollector")
       }
     } */
     
- / stage("get group")
+  stage("get group")
     {
       steps{
         confluenceGroupJ(jsondata)
