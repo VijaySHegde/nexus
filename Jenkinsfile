@@ -72,7 +72,7 @@ stage("confluenceCollector")
     {
       steps{
         confluenceGetGroupJ(jsondata)
-        echo "${json}"
+       
       }
     } 
  /*  stage("get group")
