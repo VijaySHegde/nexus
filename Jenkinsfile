@@ -74,12 +74,12 @@ stage("confluenceCollector")
         confluenceGetGroupJ(jsondata)
       }
     } */
-   /* stage("get group")
+   stage("get group")
     {
       steps{
         confluenceGroupJ(jsondata)
       }
-    } */
+    } 
  /*   stage("get group members")
     {
       steps{
@@ -101,7 +101,7 @@ stage("confluenceCollector")
       }
   }
   */
-    stage("testing")
+  /*  stage("testing")
     {
       steps
       { script{
