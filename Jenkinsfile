@@ -62,12 +62,13 @@ stage("confluenceCollector")
         confluencePrivateSpaceJ(jsondata)
       }
     } */
-    stage("collectorspace")
+   /* stage("collectorspace")
     {
       steps{
         confluenceCollectorSpaceJ(jsondata)
       }
-    } 
+    } */
+    
     /*stage("collectorspace")
     {
       steps{
@@ -76,12 +77,12 @@ stage("confluenceCollector")
       }
     } */
     
- /*  stage("get group")
+ / stage("get group")
     {
       steps{
         confluenceGroupJ(jsondata)
       }
-    } */
+    } 
  /*   stage("get group members")
     {
       steps{
