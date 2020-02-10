@@ -63,7 +63,7 @@ stage("confluenceCollector")
       }
     } 
     
-  /*  stage("collectspace")
+    stage("collectspace")
     {
       steps{
         confluenceCollectorSpaceJ(jsondata)
