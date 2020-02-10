@@ -29,4 +29,13 @@ pipeline{
   confluenceDeleteContentJ(jsondata)
   log_function("Confluence","Deleted page by id")
   }
+  
+  post {
+  failure
+  {
+  log_function("Confluence","failed")
   }
+  }
+} //stage end
+}
+}//pipeline end
