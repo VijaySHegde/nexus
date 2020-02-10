@@ -1,0 +1,32 @@
+@Library('shlib')_
+pipeline{
+  agent any
+  stages{
+  stage("Confluence")
+  {
+  steps{
+  confluenceConnectorSpaceJ(jsondata)
+  log_function("Confluence","space created")
+  
+  confluencePrivateSpaceJ(jsondata)
+  log_function("Confluence","Private space created")
+  
+  confluenceContentJ(jsondata)
+  log_function("Confluence","Created a page")
+  
+  confluenceCollectorSpaceJ(jsondata)
+  log_function("Confluence","Collected space info")
+  
+  confluenceGetGroupJ(jsondata)
+  log_function("Confluence","Displayed all groups")
+  
+  confluenceGroupJ(jsondata)
+  log_function("Confluence","particular group name details listed.")
+  
+  confluenceGroupMemberJ(jsondata)
+  log_function("Confluence","Member details")
+  
+  confluenceDeleteContentJ(jsondata)
+  log_function("Confluence","Deleted page by id")
+  }
+  }
