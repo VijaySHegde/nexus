@@ -50,12 +50,12 @@ stage("confluenceCollector")
         confluenceConnectorSpaceJ(jsondata)
       }
     } 
-  /* stage("private space creation")
+   stage("private space creation")
     {
       steps{
         confluencePrivateSpaceJ(jsondata)
       }
-    } */
+    } 
     stage("content creation")
     {
       steps{
