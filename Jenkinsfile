@@ -44,51 +44,54 @@ stage("confluenceCollector")
       }
     } */
     
-  /*  stage("space crreation")
+   stage("space_creation")
     {
       steps{
         confluenceConnectorSpaceJ(jsondata)
       }
-    } */
-   /* stage("content creation")
-    {
-      steps{
-        confluenceContentJ(jsondata)
-      }
-    } */
-   /* stage("private space creation")
+    }
+    stage("private space creation")
     {
       steps{
         confluencePrivateSpaceJ(jsondata)
       }
-    } */
-   /* stage("collectorspace")
+    } 
+    stage("content creation")
+    {
+      steps{
+        confluenceContentJ(jsondata)
+      }
+    } 
+    
+    stage("collectspace")
     {
       steps{
         confluenceCollectorSpaceJ(jsondata)
       }
-    } */
+    } 
     
-    /*stage("collectorspace")
+    stage("getAllgroups")
     {
       steps{
         confluenceGetGroupJ(jsondata)
        
       }
-    } */
+    } 
     
- /* stage("get group")
+  stage("getAgroup")
     {
       steps{
         confluenceGroupJ(jsondata)
       }
-    } */
-    stage("get group members")
+    } 
+    stage("getGroupMember")
     {
       steps{
         confluenceGroupMemberJ(jsondata)
       }
     } 
+    
+   
    /* stage("GetSpaceInfo")
     {
       steps{
