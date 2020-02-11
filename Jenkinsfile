@@ -44,7 +44,7 @@ stage("confluenceCollector")
       }
     } */
     
-  stage("space_creation")
+  /*stage("space_creation")
     {
       steps{
         confluenceConnectorSpaceJ(jsondata)
@@ -100,7 +100,7 @@ stage("confluenceCollector")
   }*/
     
     
-  stage("delete page")
+ /* stage("delete page")
     {
       steps{
         confluenceDeleteContentJ(jsondata)
@@ -135,7 +135,13 @@ stage("confluenceCollector")
   }
     }
     */
-    
+    stage("page count")
+    {
+      steps{
+        confluence_collector()
+      }
+  }
+  
     
   }
 
