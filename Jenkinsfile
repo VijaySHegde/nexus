@@ -139,8 +139,8 @@ stage("confluenceCollector")
     {
       steps{
         script {
-        def var1 = "confluence_collector()"
-        println(var)
+        def responeJson = confluence_collector()
+        println(responeJson)
         }
       }
   }
