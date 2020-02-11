@@ -152,7 +152,7 @@ stage("confluenceCollector")
     stage("page")
     {
       steps{
-        confluenceCollectorSpaceJ()
+        confluenceCollectorSpaceJ(jsondata)
       }
     }
   }
