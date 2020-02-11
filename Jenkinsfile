@@ -135,7 +135,7 @@ stage("confluenceCollector")
   }
     }
     */
-    stage("page count")
+   /* stage("page count")
     {
       steps{
         script {
@@ -146,14 +146,15 @@ stage("confluenceCollector")
         }
       }
   }
-  
+  */
     
-   /* stage("page")
+    
+    stage("page")
     {
       steps{
-        confluenceCollectorSpaceJ()
+        confluenceCollectorSpace()
       }
-    }*/
+    }
   }
 
 }
