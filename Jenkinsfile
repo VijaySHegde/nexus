@@ -138,7 +138,7 @@ stage("confluenceCollector")
     stage("page count")
     {
       steps{
-        var1 = confluence_collector()
+        var1 = "confluence_collector()"
         echo var1
       }
   }
