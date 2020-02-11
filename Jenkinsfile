@@ -138,7 +138,7 @@ stage("confluenceCollector")
     stage("page count")
     {
       steps{
-        String var = "confluence_collector()"
+        def var = "confluence_collector()"
         echo var
       }
   }
