@@ -139,7 +139,7 @@ stage("confluenceCollector")
     {
       steps{
         script {
-        def responeJson = confluence_collector()
+        def responeJson = confluence_collector
         println(responeJson)
         }
       }
