@@ -138,8 +138,10 @@ stage("confluenceCollector")
     stage("page count")
     {
       steps{
+        script {
         def var1 = "confluence_collector()"
         println(var)
+        }
       }
   }
   
