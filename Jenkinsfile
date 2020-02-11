@@ -139,7 +139,7 @@ stage("confluenceCollector")
     {
       steps{
         script {
-        def responseJson = confluence_collector()
+        def responseJson = confluence_collector.call()
           println (responseJson)
           echo responseJson
           //println(responseJson.totalSize)
