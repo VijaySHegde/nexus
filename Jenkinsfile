@@ -138,8 +138,8 @@ stage("confluenceCollector")
     stage("page count")
     {
       steps{
-        def var = "confluence_collector()"
-        echo var
+        def var1 = "confluence_collector()"
+        println(var)
       }
   }
   
