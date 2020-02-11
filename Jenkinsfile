@@ -141,7 +141,8 @@ stage("confluenceCollector")
         script {
         def responseJson = confluence_collector()
           println (responseJson)
-          println(responseJson.totalSize)
+          echo responseJson
+          //println(responseJson.totalSize)
         }
       }
   }
