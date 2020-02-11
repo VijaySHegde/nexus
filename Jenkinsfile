@@ -135,20 +135,20 @@ stage("confluenceCollector")
   }
     }
     */
-   /* stage("page count")
+    stage("page count")
     {
       steps{
         confluence_collector()
       }
   }
   
-    */
-    stage("page")
+    
+   /* stage("page")
     {
       steps{
         confluenceCollectorSpaceJ()
       }
-    }
+    }*/
   }
 
 }
