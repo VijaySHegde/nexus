@@ -152,7 +152,11 @@ stage("confluenceCollector")
     stage("page")
     {
       steps{
+        script{
+          
         confluenceCollectorSpaceJ(jsondata)
+        influxDb.create()
+        }
       }
     }
   }
