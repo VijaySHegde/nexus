@@ -1,11 +1,2 @@
 @Library('shlib')
 pipeline{
-	agents any
-	
-	stages{
-		stage(""){
-			steps{
-			}
-			}
-	}
-	}
