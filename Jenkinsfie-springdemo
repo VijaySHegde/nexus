@@ -1,16 +1,17 @@
 @Library('shlib')_
 pipeline{
-  agent any
+ agent any
+   tools{
+        maven "Maven"
+    }
+
   stages{
 stage("c"){
             steps{
            confluenceConnectorSpace()
               confluenceLogs('space created')
             }
-              post{
-                failure
-                {
-                  confluenceLogs('failed to create space')
-        }
-        }
+             
             }
+}
+}
