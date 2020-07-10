@@ -1,3 +1,5 @@
+/*
+
 //Map modules = [:]
 @Library('shlib')_
 pipeline{
@@ -164,3 +166,4 @@ stage("confluenceCollector")
 }
 
 
+*/
