@@ -174,7 +174,7 @@ stage("confluenceCollector")
   }
   */
     
-    
+  /*  
     stage("page")
     {
       steps{
@@ -188,6 +188,4 @@ stage("confluenceCollector")
   }
 
 }
-
-
 */
